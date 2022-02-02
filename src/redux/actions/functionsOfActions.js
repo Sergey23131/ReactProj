@@ -12,4 +12,4 @@ const loadFilteredFilms = (payload) => {
     return {type: LOAD_BY_FILTER, payload}
 }
 
-export {loadMovies, loadGenres, loadFilteredFilms}
+export {loadMovies, loadGenres, loadFilteredFilms};

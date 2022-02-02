@@ -1,5 +1,6 @@
-import './UserImg.css';
 import {Link} from "react-router-dom";
+
+import './UserImg.css';
 
 export default function UserImage() {
     return (

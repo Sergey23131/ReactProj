@@ -1,4 +1,4 @@
-import './Poster.css';
+ import './Poster.css';
 
 export default function PosterPreview({item}) {
     return (

@@ -2,9 +2,10 @@ import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {discoverMovie, genresOfMovies, getMoviesByGenre} from "../../services/services";
 import {loadFilteredFilms, loadGenres, loadMovies} from "../../redux/actions/functionsOfActions";
-import './Movies.css';
 import {Movie} from "../Movie/Movie";
 import {Link} from "react-router-dom";
+
+import './Movies.css';
 
 
 export default function Movies() {

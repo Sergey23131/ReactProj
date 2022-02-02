@@ -1,15 +1,17 @@
 import Movies from "./components/movies/Movies";
-import './App.css';
 import Headers from "./components/Header/Headers";
 
 import {
     BrowserRouter as Router,
     Route
 } from "react-router-dom";
+
 import {Redirect, Switch} from "react-router";
 import MoviesListCard from "./components/MoviesListCard/MoviesListCard";
 import UserPage from "./components/UserPage/UserPage";
 import FilteredGenres from "./components/FilteredGenre/FilteredGenres";
+
+import './App.css';
 
 
 export default function App() {
@@ -29,3 +31,4 @@ export default function App() {
 
     );
 }
+

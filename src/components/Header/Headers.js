@@ -1,10 +1,10 @@
-import './header.css';
 import {Link} from "react-router-dom";
 import UserImage from "../UserImage/UserImage";
 import UserInfo from "../UserInfo/UserInfo";
 import {useState} from "react";
 import {useSelector} from "react-redux";
 
+import './header.css';
 
 export default function Headers() {
 
@@ -45,13 +45,6 @@ export default function Headers() {
                 <Link to={'/movies'} className={'movie_b'}>Movies</Link>
 
                 <button className={'ChangeTheme'} onClick={changeColor}>Change theme</button>
-
-                <form onSubmit={save} className={'form_pos'}>
-                    <input type="text" name={'title'} value={formState.title} onChange={onFormInputChange}
-                           placeholder="Find movie" className={'form_input'}/>
-                </form>
-
-                <Link to={{pathname: '/movies/' + findMovie}} className={'find_button'}><h3>Find movie</h3></Link>
 
                 <UserImage/>
                 <UserInfo/>

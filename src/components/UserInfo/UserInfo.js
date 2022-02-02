@@ -1,5 +1,5 @@
-import './user_info.css';
 import {Link} from "react-router-dom";
+import './user_info.css';
 
 export default function UserInfo() {
     return (

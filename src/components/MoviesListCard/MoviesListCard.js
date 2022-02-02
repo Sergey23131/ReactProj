@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import {getMovieById} from "../../services/services";
-import './MovieListCard.css';
 import GenreBadge from "../GenreBadge/GenreBadge";
 
+import './MovieListCard.css';
 
 export default function MoviesListCard({match: {params: {id}}}) {
 

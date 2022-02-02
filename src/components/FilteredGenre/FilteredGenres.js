@@ -1,9 +1,10 @@
 import {useDispatch, useSelector} from "react-redux";
 import {Movie} from "../Movie/Movie";
-import './filtredGenres.css';
 import {Link} from "react-router-dom";
 import {getMoviesByGenre} from "../../services/services";
 import {loadFilteredFilms} from "../../redux/actions/functionsOfActions";
+
+import './filtredGenres.css';
 
 export default function FilteredGenres() {
     const {filtered} = useSelector(({reducer_genres}) => reducer_genres)

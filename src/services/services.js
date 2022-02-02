@@ -7,12 +7,12 @@ const instance = axios.create({
     }
 });
 
-const discoverMovie = (currentPage) => instance.get(`discover/movie?page=${currentPage}`)
+const discoverMovie = (currentPage) => instance.get(`discover/movie?page=${currentPage}`);
 
-const genresOfMovies = () => instance.get('genre/movie/list')
+const genresOfMovies = () => instance.get('genre/movie/list');
 
-const getMovieById = (movieId) => instance.get(`/movie/${movieId}`)
+const getMovieById = (movieId) => instance.get(`/movie/${movieId}`);
 
-const getMoviesByGenre = (genreId) => instance.get(`/discover/movie?with_genres=${genreId}`)
+const getMoviesByGenre = (genreId) => instance.get(`/discover/movie?with_genres=${genreId}`);
 
-export {discoverMovie, genresOfMovies, getMovieById, getMoviesByGenre}
+export {discoverMovie, genresOfMovies, getMovieById, getMoviesByGenre};
